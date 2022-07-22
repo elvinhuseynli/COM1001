@@ -1,0 +1,18 @@
+def migratoryBirds(arr):
+    a = int(input())
+    b = input().split()
+    c = []
+    max_count = 0
+    
+    b.sort()
+    
+    for x in b:
+        if b.count(x) > max_count and not x in c:
+            max_count = b.count(x)
+            c.append(x)
+            
+    p = c[-1]
+            
+    print(p)
+    
+migratoryBirds(input)
